@@ -1,0 +1,57 @@
+{
+  "admin/services/gpon": {
+    "title": "GPON",
+    "order": 60,
+    "action": {
+      "type": "firstchild"
+    },
+    "depends": {
+      "acl": [ "luci-app-gpon" ]
+    }
+  },
+
+  "admin/services/gpon/form": {
+    "title": "Form View",
+    "order": 1,
+    "action": {
+      "type": "view",
+      "path": "gpon/form"
+    }
+  },
+
+  "admin/services/gpon/html": {
+    "title": "HTML Page",
+    "order": 2,
+    "action": {
+      "type": "view",
+      "path": "gpon/htmlview"
+    }
+  },
+  
+  "admin/services/gpon/rpc-array": {
+    "title": "RPC Array",
+    "order": 3,
+    "action": {
+      "type": "view",
+      "path": "gpon/rpc"
+    }
+  },
+
+  "admin/services/gpon/rpc-jsonmap-table": {
+    "title": "RPC JSONMap Table",
+    "order": 4,
+    "action": {
+      "type": "view",
+      "path": "gpon/rpc-jsonmap-tablesection"
+    }
+  },
+
+  "admin/services/gpon/rpc-jsonmap-typed": {
+    "title": "RPC JSONMap Typed",
+    "order": 5,
+    "action": {
+      "type": "view",
+      "path": "gpon/rpc-jsonmap-typedsection"
+    }
+  }
+}

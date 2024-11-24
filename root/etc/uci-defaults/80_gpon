@@ -1,0 +1,9 @@
+#!/bin/sh
+
+touch /etc/config/gpon
+uci set gpon.first=first
+uci set gpon.second=second
+uci set gpon.third=third
+uci commit
+
+return 0
